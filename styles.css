@@ -1,0 +1,235 @@
+body {
+  margin: 0 auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #333;
+}
+
+a, a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(201, 7, 7);
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  padding: 0 20px;
+  height: 50px;
+  justify-content: space-between;
+  box-shadow: 2px 0 4px rgba(0,0,0,.4);
+  background-color: white;
+}
+
+nav img {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+nav ul {
+  height: 100%;
+  margin-right: 20px;
+}
+
+nav li {
+  padding: 0px 20px;
+  height: 100%;
+  display: flex; 
+  align-items: center;
+  cursor: pointer;
+}
+
+nav li.selected {
+  color: rgb(201, 7, 7);
+  text-decoration: underline;
+}
+
+main {
+  padding-top: 50px;
+} 
+
+section {
+  padding: 20px;
+}
+
+.container {
+  width: 100vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#main-img{
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_1170,w_1560,x_318,y_41/v1538515229/wzngyihqzvwwjfgsoddh.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.gallery-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-tile {
+  flex: 1 1 20%;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+#tabs li {
+  padding: 5px 30px;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+#tabs li.selected {
+  background-color: #333;
+  color: white;
+}
+
+#tabs li:hover {
+  background-color: rgb(201, 7, 7);
+  color: white;
+}
+
+#tab-content {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7em;
+  justify-content: center;
+  text-align: center;
+}
+
+.instructor-img {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.instructor {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.instructor > div:first-of-type {
+  padding: 0 5px;
+}
+
+.instructor h3 {
+  font-size: 1.8em;
+}
+
+.instructor ul {
+  list-style-type: disc;
+  flex-direction: column;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  margin-left: 50px;
+  width: 550px;
+  font-weight: bold;
+}
+
+.instructor-info {
+  max-height: 400px;
+  width: 0px;
+  overflow: hidden;
+  transition: width 2s;
+}
+
+.instructor-info.show {
+  width: 600px;
+}
+
+.more-info {
+  background-color: rgba(0,0,0,.4);
+  color: white;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+.instructor-img:hover .more-info {
+  display: flex;
+}
+
+.gallery-tile:nth-of-type(1) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_234,w_400,x_121,y_0/v1550807562/gkbtkqwxwpe8ttribi1m.png);
+}
+.gallery-tile:nth-of-type(2) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_562,w_749,x_0,y_0/v1545621304/h40dcxfjhltxws4czrrc.gif);
+}
+.gallery-tile:nth-of-type(3) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_1170,w_1560,x_318,y_41/v1538515229/wzngyihqzvwwjfgsoddh.jpg);
+}
+.gallery-tile:nth-of-type(4) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_598,w_797,x_0,y_0/v1529782557/jciuu731brpd7csrwkic.jpg);
+}
+.gallery-tile:nth-of-type(5) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_fill,g_center,h_300,w_400/v1526616594/h6t9k5ecssiv0kormxaq.png);
+}
+.gallery-tile:nth-of-type(6) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_934,w_1245,x_0,y_0/v1523578324/b8fyktt5iyduhmf8gtsa.png);
+}
+.gallery-tile:nth-of-type(7) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_600,w_800,x_0,y_0/v1522429102/lwaaqggm4q617usolc8r.jpg);
+}
+.gallery-tile:nth-of-type(8) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_1744,w_2325,x_540,y_0/v1522301084/ve1zp9p7ahitdigqzsr4.png);
+}
+.gallery-tile:nth-of-type(9) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_1365,w_1820,x_0,y_0/v1520539726/jjffre6chvnbrzaitfyz.png);
+}
+.gallery-tile:nth-of-type(10) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_631,w_841,x_57,y_0/v1520341270/u8mkdj4evnemvbwjgxj8.png);
+}
+.gallery-tile:nth-of-type(11) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_453,w_604,x_0,y_0/v1519475362/mzg7tdvzmrxcnte1riw6.jpg);
+}
+.gallery-tile:nth-of-type(12) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_1048,w_1397,x_72,y_0/v1518669010/spae85kn877x5pxv8vwm.png);
+}
+.gallery-tile:nth-of-type(13) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_1587,w_2116,x_11,y_0/v1517972035/hbaxigntme5evcs3a68d.jpg);
+}
+.gallery-tile:nth-of-type(14) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_456,w_608,x_148,y_28/v1511980801/r3hlohfac57rgm43nw7m.png);
+}
+.gallery-tile:nth-of-type(15) {
+  background-image: url(https://res.cloudinary.com/general-assembly-profiles/image/upload/c_crop,h_1532,w_2043,x_71,y_0/v1508344590/fiyfanswbfpdgn5821re.png);
+}
+#trevor-img {
+  background-image: url(https://media.licdn.com/dms/image/C5103AQHJ_OHCewCaBQ/profile-displayphoto-shrink_800_800/0?e=1560988800&v=beta&t=8eHw4bSttwYr4V0VkxmCAQbNJi3fR39IyoCWF5FiMoE);
+}
+#jackie-img{
+  background-image: url(http://jackiecasper.com/img/hero.jpg)
+}
