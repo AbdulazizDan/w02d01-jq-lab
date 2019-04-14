@@ -49,4 +49,8 @@ $(document).ready(function(){
 
 
 
+  // BONUS (this will be a tough one!)
+  // When the page loads, set the #main-img to a random image from the '.gallery-tile's
+  // HINT: Look at Math.random() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
 })

@@ -23,10 +23,14 @@
 - If 'this' tab has an id of 'fewd' set the text of the '#tab-content' to the fewdText
 - If it has an id of 'js' set it to the jsText
 - If it has an id of 'wdi' set it to the wdiText
-- HINT: use attr to get the id of the element http://api.jquery.com/attr/
+- HINT: use [attr](http://api.jquery.com/attr/) to get the id of the element 
 
 ### Instructors
 - When you click on '#jackie' 
 - Select '#jackie-info' and toggle the class 'show'
 - When you click on 'trevor'
 - Select 'trevor-info' and toggle the class 'show'
+
+### BONUS (this will be a tough one!)
+- When the page loads, set the #main-img to a random image from the '.gallery-tile's
+- HINT: Look at [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
